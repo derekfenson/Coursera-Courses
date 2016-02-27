@@ -1,0 +1,85 @@
+* {
+	font-family: Adobe Caslon Pro;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	margin: 50px;
+	font-size: 1.75em;
+	text-align: center;
+}
+
+p {
+	border: solid;
+	border-width: 1px;
+	border-top: none;
+	border-right: none;
+	background-color: yellow;
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.25em;
+	padding: 5px;
+	float: right;
+}
+
+section {
+	clear: right;
+	padding: 15px;
+}
+
+.row {
+	width: 100%;
+	position: absolute;
+	float: left;
+	overflow: hidden;
+}
+
+.outer {
+	border: double;
+	padding-bottom: 500px;
+	margin-bottom: -500px;
+}
+
+.outer > div {
+	border: solid;
+	border-width: 1px;
+	background-color: #6495ed;
+	margin: 20px;
+	margin-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+	.cont1 > div, .cont2 > div {
+		margin-right: 10px;
+	}
+
+	.cont2 > div, .cont3 > div {
+		margin-left: 10px;
+	}
+
+	.cont1, .cont2, .cont3 {
+		width: 33.333333%;
+		float: left;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.cont1, .cont2 {
+		width: 50%;
+		float: left;
+	}
+
+	.cont1 > div {
+		margin-right: 10px;
+	}
+
+	.cont2 > div {
+		margin-left: 10px;
+	}
+
+	.cont3 {
+		clear: left;
+	}
+}
