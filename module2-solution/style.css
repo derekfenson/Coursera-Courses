@@ -27,55 +27,35 @@ p {
 section {
 	clear: right;
 	padding: 10px;
-	padding-bottom: 510px;
-	margin-bottom: -500px;
+
 }
 
 .row {
 	width: 100%;
-	position: relative;
-	overflow: hidden;
 }
 
-.outer > div {
+.outer > .d {
 	border: 1px solid black;
 	background-color: #6495ed;
 	margin: 20px;
-	overflow: hidden;
 }
 
 @media (min-width: 992px) {
-	.cont1 > div, .cont2 > div {
+	.cont1 > .d, .cont2 > .d {
 		margin-right: 10px;
 	}
 
-	.cont2 > div, .cont3 > div {
+	.cont2 > .d, .cont3 > .d {
 		margin-left: 10px;
-	}
-
-	.row {
-		overflow: hidden;
 	}
 
 	.outer {
 		width: 33.33%;
-		position: relative;
 		float: left;
-		padding-bottom: 500px;
-		margin-bottom: -500px;
 	}
 
-	.outer > div {
-		padding-bottom: 500px;
-		margin-bottom: -500px;
-	}
-
-	.bottom {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 1px;
-		background: black;
+	.outer > .d {
+		position: relative;
 	}
 }
 
@@ -85,11 +65,11 @@ section {
 		float: left;
 	}
 
-	.cont1 > div {
+	.cont1 > .d {
 		margin-right: 10px;
 	}
 
-	.cont2 > div {
+	.cont2 > .d {
 		margin-left: 10px;
 	}
 
