@@ -30,6 +30,10 @@ section {
 
 }
 
+div {
+	display: block;
+}
+
 .row {
 	width: 100%;
 }
