@@ -1,8 +1,12 @@
 * {
-	font-family: Adobe Caslon Pro;
+	font-family: "Adobe Caslon Pro";
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+body {
+	background-color: gray;
 }
 
 h1 {
@@ -16,7 +20,6 @@ p {
 	border-width: 1px;
 	border-top: none;
 	border-right: none;
-	background-color: yellow;
 	text-align: right;
 	font-weight: bold;
 	font-size: 1.25em;
@@ -24,34 +27,38 @@ p {
 	float: right;
 }
 
+.cont1 p {
+	background-color: #FFFF33;
+}
+
+.cont2 p {
+	background-color: #FF9933;
+}
+
+.cont3 p {
+	background-color: #CC6633;
+}
+
 section {
 	clear: right;
 	padding: 10px;
-
 }
 
 div {
 	display: block;
 }
 
-.row {
-	width: 100%;
+.outer {
+	margin: 0px;
 }
 
 .outer > .d {
 	border: 1px solid black;
 	background-color: #6495ed;
-	margin: 20px;
+	margin: 10px;
 }
 
 @media (min-width: 992px) {
-	.cont1 > .d, .cont2 > .d {
-		margin-right: 10px;
-	}
-
-	.cont2 > .d, .cont3 > .d {
-		margin-left: 10px;
-	}
 
 	.outer {
 		width: 33.33%;
@@ -70,11 +77,11 @@ div {
 	}
 
 	.cont1 > .d {
-		margin-right: 10px;
+		margin-right: 5px;
 	}
 
 	.cont2 > .d {
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 
 	.cont3 {
